@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>949711576673-hurf3hnk3h60hdtijuj625v2s3hhuv8l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.949711576673-hurf3hnk3h60hdtijuj625v2s3hhuv8l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBb5PNiTefKFcAsVakmvV5PO4a_pk8qmBE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>949711576673</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aidanegan.Pet-StoreApp</string>
+	<key>PROJECT_ID</key>
+	<string>pet-store-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pet-store-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:949711576673:ios:1ea2f7d2901d935ac95420</string>
+	<key>DATABASE_URL</key>
+	<string>https://pet-store-app.firebaseio.com</string>
+</dict>
+</plist>

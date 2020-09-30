@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stripe Checkout View Controller-->
+        <scene sceneID="umy-Bn-97u">
+            <objects>
+                <viewController storyboardIdentifier="Checkout" id="6SU-Rp-fCg" customClass="StripeCheckoutViewController" customModule="Pet_StoreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZ2-6I-QlK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-uJ-Zym">
+                                <rect key="frame" x="0.0" y="88" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="hLX-Ml-hUV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VxI-uJ-Zym" firstAttribute="leading" secondItem="2Jn-pK-BJd" secondAttribute="leading" id="Eop-6S-EiD"/>
+                            <constraint firstItem="VxI-uJ-Zym" firstAttribute="top" secondItem="2Jn-pK-BJd" secondAttribute="top" id="Mc8-oi-XdE"/>
+                            <constraint firstItem="VxI-uJ-Zym" firstAttribute="trailing" secondItem="2Jn-pK-BJd" secondAttribute="trailing" id="Vcq-DO-5nd"/>
+                            <constraint firstItem="VxI-uJ-Zym" firstAttribute="top" secondItem="2Jn-pK-BJd" secondAttribute="top" id="pgg-sU-5cc"/>
+                            <constraint firstItem="VxI-uJ-Zym" firstAttribute="trailing" secondItem="2Jn-pK-BJd" secondAttribute="trailing" id="q9R-sT-19j"/>
+                            <constraint firstItem="VxI-uJ-Zym" firstAttribute="leading" secondItem="2Jn-pK-BJd" secondAttribute="leading" id="wyk-nh-sYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Jn-pK-BJd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JhA-mW-Y5v"/>
+                    <connections>
+                        <outlet property="paymentStackView" destination="VxI-uJ-Zym" id="hLg-E1-gnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKv-hc-Skn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="66.964285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XZ9-pb-4RG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZSW-Af-7Bq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p17-Ey-VRi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6SU-Rp-fCg" kind="relationship" relationship="rootViewController" id="gwV-cm-aqh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpG-Hb-SyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+</document>
